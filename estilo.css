@@ -1,0 +1,48 @@
+
+body{
+  background-color: #104E8B;
+}
+
+.login{
+  border: solid 2px #AFAFAF;
+  border-color: #F4A460;
+    width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #FFFFFF
+
+}
+
+.campo{
+  padding: 5px 50px;
+  width: 150px;
+  margin-bottom:20px;
+  margin-top: 10px;
+  border: solid 1px #F4A460;
+}
+
+.login img{
+  margin-bottom: 10px;
+
+}
+
+.botao{
+  padding: 05px 30px;
+  border: solid 1px #F4A460;
+  background-color: #F4A460;
+  font-size: 15px;
+  margin-bottom: 10px;
+
+}
+
+.botao:hover{
+  background-color: #D2691E;
+
+}
+
+
+*{
+  margin: 0px;
+  padding: 0;
+}
