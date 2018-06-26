@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aula 16 - Converter string para float/int</title>
+    <script src="JS/jquery-3.3.1.min.js"> </script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $("#but1").click(function(event) {
+        /* Act on the event */
+        var num = $("#num1").val();
+        num = parseFloat(num);
+
+        var num2 = $("#num2").val();
+        num2 = parseFloat(num2);
+
+        var vezes = num * num2;
+
+        alert("O número "+num+" vezes "+num2+" é "+vezes)
+
+      });
+
+      $("#but2").click(function(event) {
+        /* Act on the event */
+        var num = $("#num1").val();
+        num = parseFloat(num);
+
+        var num2 = $("#num2").val();
+        num2 = parseFloat(num2);
+
+        var mais = num + num2;
+
+        alert("O número "+num+" mais "+num2+" é "+mais);
+
+      });
+
+      $("#but3").click(function(event) {
+        /* Act on the event */
+        var num = $("#num1").val();
+        num = parseFloat(num);
+
+        var num2 = $("#num2").val();
+        num2 = parseFloat(num2);
+
+        var menos = num - num2;
+
+        alert("O número "+num+" menos "+num2+" é "+menos)
+
+      });
+
+      $("#but4").click(function(event) {
+        /* Act on the event */
+        var num = $("#num1").val();
+        num = parseFloat(num);
+
+        var num2 = $("#num2").val();
+        num2 = parseFloat(num2);
+
+        var dividir = num / num2;
+
+        alert("O número "+num+" dividir "+num2+" é "+dividir)
+
+      });
+
+    });
+
+    </script>
+
+  </head>
+  <body>
+
+    <form action="" method="">
+
+      <input type="number" name="num1" id="num1" />
+
+      <input type="number" name="num2" id="num2" /> <p></p>
+
+    </form>
+    <p></p>
+    <form action="" method="">
+
+
+      <button type="button" name="button" id="but1" >*</button>
+
+      <button type="button" name="button" id="but2" >+</button>
+
+      <button type="button" name="button" id="but3" >-</button>
+
+      <button type="button" name="button" id="but4" >/</button>
+
+    </form>
+
+
+  </body>
+</html>
