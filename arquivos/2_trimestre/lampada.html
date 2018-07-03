@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lâmpada</title>
+
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+
+      $("#lampoff").mouseenter(function(){
+
+        var url= $("img").attr("src");
+
+        if (url!= "https://i.stack.imgur.com/MRjsF.jpg"){
+
+          $("img").attr("src", "http://i.stack.imgur.com/ybxlO.jpg");
+        }
+
+      });
+
+      $("#lampoff").mouseleave(function(){
+
+        var url= $("img").attr("src");
+        
+        if(url=="https://i.stack.imgur.com/MRjsF.jpg"){
+
+        }
+        else{
+          $("img").attr("src", "http://i.stack.imgur.com/b983w.jpg");
+
+        }
+      });
+
+      $("#lampoff").click(function(){
+        $("img").attr("src", "https://i.stack.imgur.com/MRjsF.jpg");
+      });
+
+
+    });
+
+    </script>
+
+	</head>
+	<body>
+
+    <img id="lampoff"src="http://i.stack.imgur.com/b983w.jpg" alt="">
+
+    <h3>Lâmpada</h3>
+
+	</body>
+</html>
