@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+
+    <script src="Jquery/jquery-3.3.1.min.js">   </script>
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+
+    <script src="Bootstrap/js/bootstrap.min.js" ></script>
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+    $("div.conteudo").hide();
+     $("#abas a:first").addClass("selected");
+       $("#abas a").click(function(){
+       $("div.conteudo").hide();
+       $("#abas a").removeClass("selected");
+    $(this).addClass("selected");
+    $($(this).attr("href")).show();
+    return false;
+   });
+
+   $("input").blur(function(){
+    if($(this).val() == "")
+        {
+            $(this).css({"border-color" : "#F13", "padding": "2px"});
+        }
+   });
+
+  $("form").submit( function(event){
+    $(".obrigatorio").each(function(){
+          if( $(this).val() == "" ){
+        event.preventDefault();
+          var campo = $(this).attr("name");
+ 
+
+      }
+    });
+
+
+
+  });
+
+
+    });
+    </script>
+
+
+  </head>
+  <body class="text-center">
+<!-- -->
+<div class="container"  align="center">
+
+
+  <h1 class="font-weight-bold display-3 m-1.2 ">Formulário</h1>
+    <div class=" col-sm-8 bg-light text-secondary ">
+
+
+    <ul  class="list-group nav  " id="abas">
+      <li class=" nav-item media list-group-item list-group-item-action m-1 bg-secondary text-white " > <a class="nav-link  font-weight-bold text-white" href="#aba1" > Dados Pessoais</a> <br> <br> </li>
+      <div id="aba1" class="conteudo .form-group  font-weight-bold " >
+        <a name="aba1" ></a>
+        <br>
+        <form action="#" id="form " class="form " method="post" target="_blank" > <br>
+
+          <label>Nome</label > <br>
+            <input class="form-control obrigatorio" type="text " required  name="nome" value="" placeholder="Digite seu nome" > <br>
+
+            <label for="">Gênero</label> <br>
+            <input class="form-check-input position-static" type="radio" name="genero" value="f"> Feminino<br>
+
+            <input class="form-check-input position-static"  type="radio" name="genero" value="m"> Maculino<br> <br> <br>
+
+            <label for="">Data de nascimento</label> <br>
+            <input class="form-control obrigatorio" type="date" name="dtnasc" value="" > <br>
+
+            <label>RG</label  > <br>
+              <input class="form-control obrigatorio" type="text" name="rg" value="" maxlength="" placeholder="Insira seu RG"> <br>
+
+              <label>CPF</label> <br>
+              <input class="form-control obrigatorio" type="text" name="cpf" value="" maxlength="11" placeholder="Insira seu CPF"> <br>
+
+              <label>Endereço</label > <br>
+                <input class="form-control obrigatorio"  type="text" name="endereco" value="" placeholder="R. João Alves" > <br>
+
+                <label for="">Telefone</label> <br>
+                <input  class="form-control" type="text" name="fone" value="" maxlength="11" placeholder="DDD 0000-0000"> <br>
+
+                <label  for="">Celular</label> <br>
+                <input class="form-control obrigatorio" type="text" name="cel" value="" maxlength="12" placeholder="DDD 90000-0000"> <br>
+              </form>
+            </div>
+
+      <li class=" nav-item media list-group-item list-group-item-action m-1 bg-secondary text-white " > <a class="nav-link   font-weight-bold text-white" href="#aba2"  > Formação acadêmica</a> <br> <br> </li>
+      <div id="aba2" class="conteudo .form-group  font-weight-bold " >
+         <a name="aba2" ></a>
+        <form id="form " class="form col-sm-12"   action="index.html" method="post">
+
+          <label>Ensino básico</label> <br>
+          <input class="form-control" type="text" name="" value=""> <br>
+          <label>Ensino Superior</label> <br>
+          <input class="form-control" type="text" name="" value=""> <br>
+          <label>Especiliações</label> <br>
+          <input class="form-control" type="text" name="" value=""> <br>
+
+        </form>
+        <br>
+     </div>
+	 
+      <li class=" nav-item media list-group-item list-group-item-action m-1 bg-secondary text-white " > <a class="nav-link   font-weight-bold text-white" href="#aba3"  > Experiência profissional</a> <br> <br> </li>
+      <div id="aba3" class="conteudo .form-group  font-weight-bold " >
+         <a name="aba3" ></a>
+        <form id="form " class="form col-sm-12"   action="index.html" method="post">
+		
+          <label>Nome da empresa</label> <br>
+          <input class="form-control" type="text" name="" value=""> <br>
+          <label>Ano de inicio e termino do contrato</label> <br>
+          <input class="form-control" type="text" name="" value=""> <br>
+          <label>Cargo</label> <br>
+          <input class="form-control" type="text" name="" value=""> <br>
+
+        </form>
+        <br>
+     </div>	 
+	 
+      <li class="nav-item media list-group-itemlist-group-item-action m-1  "> <a class="nav-link  font-weight-bold text-secondary" href="#aba4" >   Finalizar o cadastro</a> <br> <br> </li>
+        <br><br>
+
+        <div id="aba4" class="conteudo .form-group  font-weight-bold " >
+          <a name="aba4" ></a>
+          <form id="form "class=" form"  action="index.html" method="post">
+
+            <label for="">E-mail</label> <br>
+            <input class="form-control obrigatorio" type="email" name="" value="" placeholder="joao@email.com.br"> <br>
+
+            <label for="">Senha</label> <br>
+            <input class="form-control obrigatorio" type="password" name="" value="" maxlength="8" placeholder="Maximo 8 caracteres"> <br>
+
+            <button id="btn" class="btn" type="submit" name="button">Confirmar</button>
+
+
+          </form>
+
+        </div>
+    </ul>
+  </div>
+
+<br><br>
+<br>
+
+
+
+
+
+
+  </body>
+</html>
