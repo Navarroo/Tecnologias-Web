@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta name="theme-color" content="#0F2027" />
+
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core JavaScript --> 
+	
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+		
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilo próprio desse site -->
+    <link href="css/customizado.css" rel="stylesheet">
+
+	
+
+	
+  </head>
+  
+  
+
+  <body class="text-center ">
+  
+
+    <header>
+      <!-- Menu Fixo -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark text-white rounded-0">
+        <a class="navbar-brand btn btn-dark" href="#">Fixed navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link btn btn-dark" href="home.html">Home <span class="sr-only ">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white btn btn-dark " 
+			  href="https://raw.githubusercontent.com/jquery-backstretch/jquery-backstretch/master/jquery.backstretch.min.js" 
+			  role="button" Target="iframe_download">Download
+			  </a>			  
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white btn btn-dark" href="Pagina2.html">Tutorial</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary text-white" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+	
+    <!-- Conteúdo do seu tutorial -->
+	
+    <main role="main" class="container col-sm-7 text-center text-white ">
+	
+		<div class="container nav-item media list-group-item list-group-item-action m-8"  align="center">
+		
+		  <h1 class="navbar-center navbar-white font-weight-bold display-3 m-1.2 ">BACKSTRETCH</h1><br><br/>
+		  <p class="lead conteudo .form-group  font-weight-bold ">Um simples plugin jQuery que permite adicionar uma imagem de fundo com capacidade de 
+		  apresentação de slides e redimensionada dinamicamente a qualquer página ou elemento</p>
+		  <p><a href="https://raw.github.com/srobbin/jquery-backstretch/master/jquery.backstretch.min.js"
+		  class="btn btn-large btn btn-dark download" Target="iframe_download">Download BACKSTRETCH</a><br />
+		  <hr></hr>
+		  
+		  
+		  <p class=" conteudo .form-group  font-weight-bold">Você vê a imagem de plano de fundo em tamanho real nesta página? Em suma,
+		  é o que o Backstretch faz. Ele vai esticar qualquer imagem para caber na página ou no elemento
+		  de nível de bloco e será redimensionada automaticamente conforme a janela ou o tamanho do elemento
+		  for alterado.
+		  <P></P>
+		  <p class=" conteudo .form-group  font-weight-bold">As imagens são buscadas depois que a página é carregada, para que os usuários não precisem aguardar
+			o download da imagem (geralmente grande) antes de usar seu site.</p>
+		  <hr></hr>
+		  <br><br/>
+		  <h2 class="navbar-center navbar-white font-weight-bold  ">DEMOS</h2><br><br/>
+			<div class="accordion" id="accordionExample">
+			  <div class="card">
+				<div class="card-header" id="headingOne">
+				  <h5 class="mb-0">
+					<button class="btn btn-light btn-lg btn-block text-secondary font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  Uso Básico
+					</button>
+				  </h5>
+				</div>
+
+				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+				  <div class="card-body text-left">
+					
+					
+					  / *<p></p>
+					 * No seu núcleo, o Backstretch é um plugin de uma linha.<p></p>
+					* Basta passar no caminho para uma imagem e pronto.<p></p>
+					 * /<p></p>
+
+					<pre style='color:#000000;background:#ffffff;'>  $ . backstretch ( <span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '> imagens / garfield-interior.jpg </span><span style='color:#2a00ff; '>"</span> );
+</pre>
+					
+					
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-light btn-lg btn-block text-secondary font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  Usando como apresentação de slides
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body text-left">
+					
+					/ *<p></p>
+ * Aqui está um exemplo de como usar o Backstretch como uma apresentação de slides.<p></p>
+ * Basta passar em uma matriz de imagens e, opcionalmente, um valor de duração e de desvanecimento.<p></p>
+ * /<p></p>
+
+  // Duração é a quantidade de tempo entre os slides,<p></p>
+  // e fade é o valor que determina a rapidez com que a próxima imagem se desvanecerá<p></p>
+
+	<pre style='color:#000000;background:#ffffff;'> $ . backstretch ([
+      <span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '> images / outside.jpg </span><span style='color:#2a00ff; '>"</span>
+    , <span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '> Images / Garfield-Interior.jpg </span><span style='color:#2a00ff; '>"</span>
+    , <span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '> Images / cheers.jpg </span><span style='color:#2a00ff; '>"</span>
+  ], <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>{</span>duration :  3000 , fade :  750 <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>}</span>);
+</pre>				
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingThree">
+				  <h5 class="mb-0">
+					<button class="btn btn-light btn-lg btn-block text-secondary font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  Clicar em eventos
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				  <div class="card-body text-left">
+					/ *<p></p>
+ * Você pode facilmente anexar Backstretch a eventos jQuery, como clicar<p></p>
+ * <p></p>
+ * Clique nos botões acima para ver a mudança da imagem de fundo<p></p>
+ * /<p></p>
+ <pre style='color:#000000;background:#ffffff;'>$ ( <span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '> #outside </span><span style='color:#2a00ff; '>"</span> ). clique ( função ( e ) <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>{</span>
+    e . preventDefault ();
+    $ . backstretch ( <span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '> imagens / fora.jpg </span><span style='color:#2a00ff; '>"</span> );
+  <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>}</span>);
+
+  $ ( <span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '> #cheers </span><span style='color:#2a00ff; '>"</span> ). clique ( função ( e ) <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>{</span>
+    e . preventDefault ();
+    $ . backstretch ( <span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '> images / cheers.jpg </span><span style='color:#2a00ff; '>"</span> );
+  <span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>}</span>);
+</pre>
+				  </div>
+				</div>
+			  </div>
+			</div><br></br><hr></hr>
+			<h2>Como saber mais sobre?</h2><br>
+        <p>
+            Se você estiver interessado em aprender mais sobre o Backstretch, é recomendável que você visualize <a href="https://github.com/srobbin/jquery-backstretch" title="Backstretch on GitHub">the project on GitHub</a>.<br />
+         <hr />
+		<h2>Suporte</h2>
+				<p>O suporte básico é oferecido através do <a href="https://github.com/jquery-backstretch/jquery-backstretch/issues">Github's issues tracker</a>. Muitas solicitações são resolvidas com a ajuda de outros usuários do Backstretch e de mim mesmo, no entanto, a assistência não é garantida ou oportuna..</p>
+				<hr />
+			
+			</div>
+        	
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-white">
+      <div class="container ">
+        <span class="text-white">Place sticky footer content here.</span>
+      </div>
+    </footer>
+
+	</div>
+	
+	
+	<script src="js/jquery.backstretch.min.js"></script>
+	<script>
+	
+				
+		$.backstretch([
+		  "stars_space_universe_galaxy_nebula_119068_1280x960.jpg",
+		  "",
+		  ""
+		], {
+			fade: 750,
+			duration: 4000
+		});
+				
+	</script>
+   </body>
+</html>
+
